@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".25"
+        android:background="@color/color_blanco"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/ivIpae_panel"
+            android:layout_width="180dp"
+            android:layout_height="90dp"
+            tools:background="@drawable/icono_ipae_panel" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".05"
+        android:background="@color/color_blanco" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/listaRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".7"
+        android:background="@color/color_blanco" />
+
+</LinearLayout>

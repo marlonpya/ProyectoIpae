@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:weightSum="1"
+    android:id="@+id/layout_f_sugerencias"
+    tools:context="application.ucweb.proyectoipae.fragment.SugerenciasFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".45"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:gravity="center|top"
+            android:text="@string/texto_sugerencias"
+            android:textSize="@dimen/texto_size8" />
+
+        <TextView
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="@string/texto_numero3"
+            android:textSize="@dimen/texto_size5" />
+
+        <EditText
+            android:id="@+id/tvNombre_completo"
+            style="@style/editext_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/hint_nombres_apellidos"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/tvCorreo"
+            style="@style/editext_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/hint_correo"
+            android:inputType="textEmailAddress" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".55"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".7"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/tvConsulta"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:gravity="top"
+                android:hint="@string/texto_consulta" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".3"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnEnviar"
+                style="@style/botonAzul"
+                android:text="@string/btn_enviar" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

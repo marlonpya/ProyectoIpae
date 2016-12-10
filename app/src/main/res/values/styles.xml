@@ -1,0 +1,68 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="drawerArrowStyle">@style/toolbar_style</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowActivityTransitions">true</item>
+    </style>
+
+    <style name="ToolbarStyle" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <!-- Customize color of navigation drawer icon and back arrow -->
+        <item name="colorControlNormal">@color/color_azul</item>
+    </style>
+
+    <style name="toolbar_style" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="colorPrimaryDark">#528aab</item>
+        <item name="colorPrimary">#528aab</item>
+        <item name="colorAccent">#528aab</item>
+        <item name="android:color">#528aab</item>
+
+    </style>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light">
+        <item name="actionOverflowButtonStyle">@style/OverFlow</item>
+    </style>
+
+    <style name="OverFlow" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_navigation_menu_blue</item>
+    </style>
+
+    <style name="ThemeToolbar" parent="Theme.AppCompat.Light">
+
+        <!-- navigation icon color -->
+        <item name="colorControlNormal">@color/color_azul</item>
+
+        <!-- color of the menu overflow icon -->
+        <item name="android:textColorSecondary">@color/color_azul</item>
+    </style>
+
+    <style name="botonAzul" >
+        <item name="android:background">@drawable/btn_azul</item>
+        <item name="android:textColor">@color/color_blanco</item>
+        <item name="android:layout_width">@dimen/btnAzul_width</item>
+        <item name="android:layout_height">@dimen/btnAzul_height</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/btnAzul_size</item>
+    </style>
+
+    <style name="editext_normal">
+        <item name="android:singleLine">true</item>
+        <item name="android:width">@dimen/edittext_width</item>
+        <item name="android:height">40dp</item>
+        <item name="android:layout_gravity">center</item>
+
+    </style>
+
+    <style name="textViewFont">
+        <item name="fontPath">fonts/Slimamif.ttf</item>
+    </style>
+
+
+</resources>

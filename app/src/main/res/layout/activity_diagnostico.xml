@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_a_diagnostico"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_blanco"
+    android:orientation="vertical"
+    tools:context="application.ucweb.proyectoipae.DiagnosticoActivity">
+
+    <ImageView
+        android:id="@+id/iv_fondo_ad"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:background="@drawable/fondo_principal_final" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <include layout="@layout/toolbar_principal" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@drawable/efecto_toolbar_sombra" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".2"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/texto_numero6"
+                    android:textSize="@dimen/texto_size7" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:text="@string/texto_numero7"
+                    android:textSize="@dimen/texto_size4" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".55"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/tvNombres"
+                    style="@style/editext_normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="@string/hint_nombres_apellidos"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/tvCorreo_diagnostico"
+                    style="@style/editext_normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="@string/hint_correo"
+                    android:inputType="textEmailAddress" />
+
+                <EditText
+                    android:id="@+id/tvTelefono_contacto"
+                    style="@style/editext_normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="@string/hint_tlf_contacto"
+                    android:inputType="phone" />
+
+                <EditText
+                    android:id="@+id/tvCargo_empresa"
+                    style="@style/editext_normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="@string/hint_cargo"
+                    android:inputType="text" />
+
+                <EditText
+                    android:id="@+id/tvRazon_social"
+                    style="@style/editext_normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="@string/hint_razon_social"
+                    android:inputType="text" />
+
+                <LinearLayout
+                    android:id="@+id/cboArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/tvArea"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_weight=".9"
+                        android:paddingTop="10dp"
+                        android:text="@string/texto_area"
+                        android:textSize="@dimen/texto_size5" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="left|center"
+                        android:layout_weight=".1"
+                        android:src="@drawable/ic_arrow_drop_down_black" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="3dp"
+                    android:background="@color/color_plomo" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".25"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radioTerminos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/texto_aceptar_terminos"
+                    android:textSize="@dimen/texto_size2" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+                <Button
+                    android:id="@+id/btnEnviarDiagnostico"
+                    style="@style/botonAzul"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_enviar" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

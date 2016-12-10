@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="application.ucweb.proyectoipae.CuestionarioInnovaActivity">
+
+    <ImageView
+        android:id="@+id/iv_fondo_aci"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:background="@drawable/fondo_principal_final" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <include layout="@layout/toolbar_principal" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".25"
+            android:background="@drawable/degradado_innova">
+
+            <ImageView
+                android:id="@+id/iv_tarjeta_innova_vacio"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:background="@drawable/tarjeta_estandar_vacio" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".25"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/ivCuestionario_innova_imagen"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        tools:src="@drawable/imagen_innova_liderazgo" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".1" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".65"
+                    android:gravity="center|left"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Categoría:"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/color_blanco"
+                        android:textSize="@dimen/texto_size4" />
+
+                    <TextView
+                        android:id="@+id/tvCuestionario_innova_categoria"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/color_blanco"
+                        android:textSize="@dimen/texto_size4"
+                        tools:text="Organización Estratégica" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".05"
+            android:gravity="right"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".15"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/tv_cantidad_actual_innova"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3"
+                    android:gravity="center"
+                    android:textSize="@dimen/texto_size2"
+                    android:textStyle="bold"
+                    tools:text="1" />
+
+                <TextView
+                    android:id="@+id/tvDe_innova"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3"
+                    android:text="de"
+                    android:textSize="@dimen/texto_size2"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_cantidad_preguntas_innova"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3"
+                    android:textSize="@dimen/texto_size2"
+                    android:textStyle="bold"
+                    tools:text="10" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".4"
+            android:gravity="center|top"
+            android:orientation="horizontal"
+            android:paddingTop="20dp"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".08"
+                android:gravity="bottom">
+
+                <ImageView
+                    android:id="@+id/btnRetrocederInnova"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    tools:background="@drawable/boton_izquierda_innova" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".84">
+
+                <TextView
+                    android:id="@+id/tvCuestionario_innova_pregunta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="@dimen/texto_size5"
+                    android:transitionName="t_pregunta"
+                    tools:text="¿Cuenta con un directorio que incluya 2 o mas directorios externos a la empresa y distintos de sus accionistas?" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".08"
+                android:gravity="bottom">
+
+                <ImageView
+                    android:id="@+id/btnAvanzarInnova"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    tools:background="@drawable/boton_derecha_innova" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".3"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".05" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".9"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/iv_panel_circular_innova"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:background="@drawable/panel_circular_innova2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".25"
+                        android:gravity="bottom"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".5"
+                            android:gravity="right|bottom"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <LinearLayout
+                                android:id="@+id/btnPanel_no_innova"
+                                android:layout_width="@dimen/width_boton_linear"
+                                android:layout_height="@dimen/width_boton_linear"
+                                android:background="@drawable/efecto_item_lista_circular"
+                                android:clickable="true"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="@dimen/width_boton_panel"
+                                    android:layout_height="@dimen/width_boton_panel"
+                                    android:background="@drawable/boton_no_panel" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/texto_no"
+                                    android:textSize="@dimen/texto_especial" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_weight=".06"
+                            android:layout_width="match_parent"
+                            android:layout_height=".0dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".26"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".8"
+                            android:gravity="center|left"
+                            android:orientation="vertical"
+                            android:weightSum="1">
+
+                            <LinearLayout
+                                android:id="@+id/btnPanel_proceso_innova"
+                                android:layout_width="@dimen/width_boton_linear"
+                                android:layout_height="@dimen/width_boton_linear"
+                                android:background="@drawable/efecto_item_lista_circular"
+                                android:clickable="true"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="@dimen/width_boton_panel"
+                                    android:layout_height="@dimen/width_boton_panel"
+                                    android:src="@drawable/boton_proceso_panel" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="@string/texto_proceso"
+                                    android:textSize="@dimen/texto_especial" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".20"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".8"
+                            android:gravity="center|right"
+                            android:orientation="vertical"
+                            android:weightSum="1">
+
+                            <LinearLayout
+                                android:id="@+id/btnPanel_noaplica_innova"
+                                android:layout_width="@dimen/width_boton_linear"
+                                android:layout_height="@dimen/width_boton_linear"
+                                android:background="@drawable/efecto_item_lista_circular"
+                                android:clickable="true"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="@dimen/width_boton_panel"
+                                    android:layout_height="@dimen/width_boton_panel"
+                                    android:src="@drawable/boton_noaplica_panel" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="@string/texto_noaplica"
+                                    android:textSize="@dimen/texto_especial" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".28"
+                        android:gravity="bottom"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".5"
+                            android:gravity="left|bottom"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <View
+                                android:layout_weight=".3"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"/>
+
+                            <LinearLayout
+                                android:id="@+id/btnPanel_si_innova"
+                                android:layout_width="@dimen/width_boton_linear"
+                                android:layout_height="@dimen/width_boton_linear"
+                                android:background="@drawable/efecto_item_lista_circular"
+                                android:clickable="true"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="@dimen/width_boton_panel"
+                                    android:layout_height="@dimen/width_boton_panel"
+                                    android:src="@drawable/boton_si_panel" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/texto_si"
+                                    android:textSize="@dimen/texto_especial" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_weight=".06"
+                            android:layout_width="match_parent"
+                            android:layout_height=".0dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

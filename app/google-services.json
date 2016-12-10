@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "161435701542",
+    "firebase_url": "https://proyectoipae.firebaseio.com",
+    "project_id": "proyectoipae",
+    "storage_bucket": "proyectoipae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:161435701542:android:dc9fce6683914612",
+        "android_client_info": {
+          "package_name": "application.ucweb.proyectoipae"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "161435701542-a5uon7beutdvnmt3a2v2v9l0847nos6r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "application.ucweb.proyectoipae",
+            "certificate_hash": "52F3B8181561699127189682723F85619E1141EA"
+          }
+        },
+        {
+          "client_id": "161435701542-e0g426p3kang2s5frrnqtasgd3r641d7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBr-wLZ0KGTac17G3O7IdHb3IBgeQ0Qahw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "161435701542-e0g426p3kang2s5frrnqtasgd3r641d7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

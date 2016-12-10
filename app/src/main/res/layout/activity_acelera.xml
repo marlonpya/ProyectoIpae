@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:id="@+id/layout_a_acelera"
+    tools:context="application.ucweb.proyectoipae.AceleraActivity">
+
+    <include layout="@layout/toolbar_principal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".25"
+            android:background="@drawable/degradado_acelera">
+
+            <ImageView
+                android:id="@+id/iv_tarjeta_innova_acelera"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:background="@drawable/tarjeta_acelera_lista"/>
+        </LinearLayout>
+
+        <co.moonmonkeylabs.realmrecyclerview.RealmRecyclerView
+            android:id="@+id/listaRecyclerAcelera"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".75"
+            app:rrvLayoutType="LinearLayout" />
+
+    </LinearLayout>
+
+</LinearLayout>

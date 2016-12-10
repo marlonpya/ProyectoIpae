@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="color_blanco">#ffffff</color>
+    <color name="color_negro_claro">#d9d8d8</color>
+    <color name="color_plomo">#a6a6a6</color>
+    <color name="color_plomo_claro">#fcfcfc</color>
+    <color name="color_azul">#074787</color>
+    <color name="color_btn_celeste">#00BFFF</color>
+</resources>

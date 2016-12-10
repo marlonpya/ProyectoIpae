@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_blanco"
+    tools:context="application.ucweb.proyectoipae.InicioActivity">
+
+    <ImageView
+        android:id="@+id/iv_inicio_fondo_ipae"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:background="@drawable/fondo_principal_ipae" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/alto_franja"
+            android:background="@drawable/franja_toolbar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".6"
+            android:gravity="bottom|center"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".5"
+                android:gravity="center|bottom"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="300dp"
+                    android:layout_height="130dp"
+                    android:gravity="center">
+
+                    <include
+                        layout="@layout/logo_principal_ipae"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:layout_width="220dp"
+                        android:layout_height="90dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:background="@drawable/logo_incompleto_ipae_inicio" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".5"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/textViewFont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:text="@string/texto_numero1"
+                    android:textSize="@dimen/texto_size6" />
+
+                <TextView
+                    style="@style/textViewFont"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/texto_numero2"
+                    android:textSize="@dimen/texto_size4" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".4"
+            android:gravity="top|center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnEmpezar"
+                style="@style/botonAzul"
+                android:layout_marginTop="60dp"
+                android:text="@string/btn_empezar" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

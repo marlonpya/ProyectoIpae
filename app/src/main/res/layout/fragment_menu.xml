@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:id="@+id/layout_f_menu"
+    tools:context="application.ucweb.proyectoipae.fragment.MenuFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".3"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/texto_numero4"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="@dimen/texto_size6" />
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:text="@string/texto_numero5"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="@dimen/texto_size3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="280dp"
+            android:layout_height="110dp"
+            android:background="@drawable/degradado_acelera"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/btnAcelera"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:background="@drawable/tarjeta_acelera" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <LinearLayout
+            android:layout_width="280dp"
+            android:layout_height="110dp"
+            android:background="@drawable/degradado_innova"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/btnInnova"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:background="@drawable/tarjeta_innova" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".2"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/btnLeerTerminos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/leer_terminos"
+            android:textSize="@dimen/texto_size4" />
+
+        <View
+            android:layout_width="250dp"
+            android:layout_height="1dp"
+            android:background="@color/color_plomo" />
+    </LinearLayout>
+
+
+</LinearLayout>

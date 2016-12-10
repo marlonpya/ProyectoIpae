@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/efecto_blanco"
+        android:state_pressed="false" />
+    <item
+        android:state_pressed="true" >
+        <layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+            <item android:drawable="@drawable/efecto_opaco" />
+            <item>
+                <shape xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:gravity="center"
+                    android:shape="rectangle" >
+                    <solid
+                        android:color="#75b0aeb1" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

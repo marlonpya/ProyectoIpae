@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Proyecto Ipae</string>
+    <string name="btn_empezar">Empezar</string>
+    <string name="texto_numero2">Realice un diagnóstico de su empresa\n en sólo 10 minutos</string>
+    <string name="texto_numero1">Diagnóstico Empresarial</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- OPCIONES DE NAVEGADOR -->
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="texto_sugerencias">Sugerencias</string>
+    <string name="btn_enviar">Enviar</string>
+    <string name="texto_consulta">Consulta</string>
+    <string name="texto_numero3">Complete los campos para atender su consulta o sugerencia.</string>
+    <string name="hint_nombres_apellidos">Nombres y Apellidos</string>
+    <string name="hint_correo">Correo Electrónico</string>
+    <string name="acerca_de_ipae">Acerca de Ipae</string>
+    <string name="texto_numero4">DIAGNÓSTICO DE INNOVACIÓN\n Y GESTIÓN EMPRESARIAL</string>
+    <string name="texto_numero5">(*) Sugerido para empresas con ventas\n mayores a S/.10 millones anuales</string>
+    <string name="leer_terminos">LEER TERMINOS Y CONDICIONES</string>
+    <string name="terminos_condiciones">TERMINOS Y CONDICIONES</string>
+    <string name="btn_aceptar">Aceptar</string>
+    <string name="texto_numero6">¡ Diagnóstico Listo !</string>
+    <string name="texto_numero7">Complete sus datos para enviar los resultados a tu correo empresarial</string>
+    <string name="hint_tlf_contacto">Teléfono de contacto</string>
+    <string name="hint_cargo">Cargo de la empresa</string>
+    <string name="hint_razon_social">Razón Social</string>
+    <string name="texto_aceptar_terminos">ACEPTAR TÉRMINOS Y CONDICIONES DE USO</string>
+    <string name="texto_area">Área de mayor preocupación</string>
+    <string name="texto_terminos_condiciones">Autorizo que los Datos Personales aquí proporcionados sean almacenados y utilizados por IPAE ACCIÓN EMPRESARIAL para fines estadísticos, administrativos y de gestión comercial, incluyendo: promociones de servicios, invitaciones a cursos, talleres, charlas y otros eventos que IPAE ACCIÓN EMPRESARIAL organice, auspicie o participe y para el envío de información periódica sobre las actividades en las que IPAE ACCIÓN EMPRESARIAL participe. Podré revocar la presente autorización, así como tener acceso, rectificar o cancelar los datos enviando un correo a datospersonales@ipae.pe</string>
+    <string name="texto_proceso">EN\n PROCESO</string>
+    <string name="texto_no">NO</string>
+    <string name="texto_si">SI</string>
+    <string name="texto_noaplica">NO\n APLICA</string>
+
+    <string name="mensaje_validar_combo">Debe escoger una área</string>
+    <string name="mensaje_validar_terminos">Debe aceptar los terminos y condiciones</string>
+    <string name="valor_noaplica">0</string>
+
+    <string name="mensaje_llenar_campos">Debe llenar todos los campos</string>
+
+</resources>

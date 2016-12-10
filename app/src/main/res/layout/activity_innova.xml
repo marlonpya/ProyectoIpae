@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:id="@+id/layout_a_innova"
+    tools:context="application.ucweb.proyectoipae.InnovaActivity">
+
+    <include layout="@layout/toolbar_principal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".25"
+            android:background="@drawable/degradado_innova">
+
+            <ImageView
+                android:id="@+id/iv_tarjeta_innova_lista"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:background="@drawable/tarjeta_innova_lista" />
+        </LinearLayout>
+
+        <co.moonmonkeylabs.realmrecyclerview.RealmRecyclerView
+            android:id="@+id/listaRecyclerInnova"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".75"
+            app:rrvLayoutType="LinearLayout" />
+    </LinearLayout>
+
+</LinearLayout>
